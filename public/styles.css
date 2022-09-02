@@ -489,7 +489,7 @@ main .address span {
 }
 
 .contact-form form button {
-  padding: 10px 50px;
+  padding: 10px;
   background-color: white;
   width: 200px;
   border: 1px solid #fdb833;
@@ -576,6 +576,11 @@ main .address span {
   }
 }
 
+.contact-form form button #button-submit {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .contact-form form button #button-error {
   font-weight: 1000;
   font-size: 3rem;
@@ -586,12 +591,17 @@ main .address span {
           transform: translateY(-3px);
 }
 
-.contact-form form button #button-loading, .contact-form form button #button-error {
+.contact-form form button #button-done {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #777;
+}
+
+.contact-form form button #button-loading, .contact-form form button #button-error, .contact-form form button #button-done {
   display: none;
 }
 
-.contact-form form button:hover {
-  background-color: #fdb833;
+.contact-form form #button-submit:hover {
   letter-spacing: 5px;
 }
 
@@ -890,6 +900,64 @@ footer .copyright-div span {
   font-size: 1em;
   margin-right: 5px;
   padding: 0;
+}
+
+.why-choose-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.why-choose-us h4 {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.why-choose-us .reasons {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.why-choose-us .reasons .reason {
+  margin: 0 20px;
+  margin-bottom: 40px;
+  width: 33%;
+  min-width: 250px;
+}
+
+.why-choose-us .reasons .reason h6 {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #fdb833;
+}
+
+.why-choose-us .reasons .reason img, .why-choose-us .reasons .reason .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.why-choose-us .reasons .reason .img {
+  border: 1px solid lightgray;
+  font-size: 180px;
+}
+
+@media (max-width: 860px) {
+  .why-choose-us .reasons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 500px) {

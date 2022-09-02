@@ -94,17 +94,39 @@
         <h6>Contact Us to Enquire</h6>
         <p>Fill the form to get in touch with us. We will get back to you as soon as possible.</p>
         <div data-aos="fade-up">
-            <form>
+            <form id="contact-form">
                 <div class="input-div"><input required placeholder="name" type="text" id="full-name" /><label for="full-name">Full Name</label></div>
                 <div class="input-div"><input required placeholder="mobile" type="tel" id="mobile"/><label for="mobile">Phone Number</label></div>
-                <textarea placeholder="Your message here" required></textarea>
-                <button type="submit"><span id="button-submit">Submit</span><span id="button-error">!</span><div id="button-loading" class="lds-ring"><div></div><div></div><div></div><div></div></div></button>
+                <textarea id="message" placeholder="Your message here" required></textarea>
+                <button type="submit"><span id="button-submit">Submit</span><span id="button-error">!</span><span id="button-done">Response Submitted</span><div id="button-loading" class="lds-ring"><div></div><div></div><div></div><div></div></div></button>
                 <p id="error-message">Could not send message due to some issue. Please try again later.</p>
                 <div data-aos="fade-down" class="form-background pattern-dots-sm"></div>
             </form>
         </div>
     </div>
     
+    <div class="why-choose-us">
+        <h4>Why Choose Us?</h4>
+        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et neque deserunt numquam, autem repellendus sint unde officiis at ducimus laudantium!</p>
+        <div class="reasons">
+            <div class="reason">
+                <img src="./time.gif" alt="Time image" />
+                <h6>24X7 Service</h6>
+                <p >We are ready to help you with the cab any time in the day.</p>
+            </div>
+            <div class="reason">
+                <span class="img material-icons">people</span>
+                <h6>Highly Experienced</h6>
+                <p >We have highly trained, experienced drivers for various purposes.</p>
+            </div>
+            <div class="reason">
+                <img src="./money.gif" alt="Money image" />
+                <h6>Affordable</h6>
+                <p >We offer you the lowest rates in the market.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="main">
             <div class="about-us">
