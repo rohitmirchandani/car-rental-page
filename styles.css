@@ -229,6 +229,7 @@ main .brand {
           align-items: center;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+  width: 100%;
 }
 
 main .brand h6 {
@@ -249,7 +250,8 @@ main .brand img {
 }
 
 main .brand p {
-  width: 40em;
+  padding: 10px;
+  max-width: 40em;
   margin-bottom: 15px;
   color: whitesmoke;
   font-weight: 600;
@@ -468,6 +470,14 @@ main .address span {
   margin-top: 30px;
 }
 
+.contact-form form #error-message {
+  color: #d00000;
+  text-align: justify;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
 .contact-form form .form-background {
   position: absolute;
   width: 100%;
@@ -483,6 +493,8 @@ main .address span {
   background-color: white;
   width: 200px;
   border: 1px solid #fdb833;
+  height: 50px;
+  overflow: hidden;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
@@ -492,6 +504,90 @@ main .address span {
   border: 1px solid gray;
   background-color: #fdb833;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form form button .lds-ring {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.contact-form form button .lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.contact-form form button .lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.contact-form form button .lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.contact-form form button .lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.contact-form form button #button-error {
+  font-weight: 1000;
+  font-size: 3rem;
+  color: #d00000;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.contact-form form button #button-loading, .contact-form form button #button-error {
+  display: none;
 }
 
 .contact-form form button:hover {
@@ -812,7 +908,7 @@ footer .copyright-div span {
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 950px) {
   .not-top .line {
     background-color: black !important;
   }

@@ -38,7 +38,7 @@
         <div class="brand">
             <img src="./logo.png" alt="Dimpal Cars Logo"/>
             <h6>Car rental services @ <span>affordable</span> prices</h6>
-            <p>Book a car ride with us @ lowest rates in the market. We offer best & affordable car rental services in Indore. We have highly professional and experienced drivers. Get in touch with us to make bookings.</p>
+            <p>Book a car ride with us @ lowest rates in the market. We offer best & affordable car rental services in Indore. Get in touch with us to make bookings.</p>
             <a class="contact-link" href="#contact-us">Make Bookings</a>
         </div>
         <div class="address">
@@ -98,7 +98,8 @@
                 <div class="input-div"><input required placeholder="name" type="text" id="full-name" /><label for="full-name">Full Name</label></div>
                 <div class="input-div"><input required placeholder="mobile" type="tel" id="mobile"/><label for="mobile">Phone Number</label></div>
                 <textarea placeholder="Your message here" required></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit"><span id="button-submit">Submit</span><span id="button-error">!</span><div id="button-loading" class="lds-ring"><div></div><div></div><div></div><div></div></div></button>
+                <p id="error-message">Could not send message due to some issue. Please try again later.</p>
                 <div data-aos="fade-down" class="form-background pattern-dots-sm"></div>
             </form>
         </div>
