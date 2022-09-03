@@ -5,7 +5,7 @@ let PORT = process.env.PORT || 3000;
 let path = require("path");
 
 const accountSid = 'AC42cae1b7938f4ccdccad9bbc4c4bf2b0'; 
-const authToken = '3cc1de4040123324ba6bf4cb589e20d7'; 
+const authToken = '885b6fc860ab0107008907a66aeda852'; 
 const client = require('twilio')(accountSid, authToken); 
 
 
