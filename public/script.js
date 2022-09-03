@@ -42,7 +42,7 @@ form.addEventListener("submit", (e)=>{
     // console.log(data)
 
     showButton(buttonLoading)
-    fetch('https://car-rental-page.herokuapp.com/api/submit-form',{
+    fetch('http://car-rental-page.herokuapp.com/api/submit-form',{
                 method:'POST', 
                 headers:{
                     'Accept': 'application/json',

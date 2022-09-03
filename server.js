@@ -24,9 +24,6 @@ app.post('/api/submit-form', (req, res)=>{
          to: 'whatsapp:+919826814072' 
        }) 
       .then(message => console.log(message.sid)) 
-      .catch(()=>{
-        res.sendStatus(503)
-      })
       .done(()=>{
         res.sendStatus(200)
       })
